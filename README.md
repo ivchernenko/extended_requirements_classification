@@ -1,7 +1,7 @@
 # Классификация требований
 Программы на языке poST и доказательства условий корректности для них можно найти [здесь](https://github.com/ivchernenko/post_vcgenerator/tree/main/case-studies)
 
-|Система управления | Требование на естественном языке | Требование на языке DV-TRL | Pattern |
+|Система управления | Требование на естественном языке | Требование на языке DV-TRL | Шаблон |
 | ----------------- | -------------------------------- | -------------------------- | ------- |
 | Турникет | | | |
 | | Сигнал open должен быть в состоянии true не более 10 с. | toEnvP s ∧ (∀ s1. substate s1 s ∧ toEnvP s1 ∧ toEnvNum s1 s ≥ 100 ∧  getVarBool s1 open = True ⟶ (∃ s3. toEnvP s3 ∧ substate s1 s3 ∧ substate s3 s ∧ toEnvNum s1 s3 ≤ 100 ∧ getVarBool s3 open = False ∧ (∀ s2. toEnvP s2 ∧ substate s1 s2 ∧ substate s2 s3 ∧ s2 ≠ s3 ⟶ getVarBool s2 open = True))) | [P1](patterns.md#pattern-1) |
