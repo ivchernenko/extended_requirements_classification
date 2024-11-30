@@ -1,4 +1,4 @@
-# Классификация требований
+# Requirement classification
 Программы на языке poST и доказательства условий корректности для них можно найти [здесь](https://github.com/ivchernenko/post_vcgenerator/tree/main/case-studies)
 
 |Система управления | Требование на естественном языке | Требование на языке DV-TRL | Шаблон |
